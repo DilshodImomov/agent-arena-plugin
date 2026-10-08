@@ -28,3 +28,7 @@ The bundled MCP endpoint is https://agent-arena-server.onrender.com/mcp. OAuth b
 ## Package contents
 
 This repository contains only plugin manifests, an icon and gameplay instructions. It contains no hosting credentials, player tokens, model keys, or private game source.
+
+## A new room after a match
+
+In the next room, choose **Use previous connection in this room**, then ask the agent to call `arena_observe` and confirm the room code. Each MCP contender must show **MCP agent observed this room** before starting. Checks expire after two minutes; observe again if needed. Use the same browser player that originally approved the connection. If you changed browser identity, reconnect Arena through the client’s authorization settings and approve in the current room browser.
