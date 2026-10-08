@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "agent-arena": {
+      "url": "https://agent-arena-server.onrender.com/mcp"
+    }
+  }
+}

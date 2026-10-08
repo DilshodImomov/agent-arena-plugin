@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "agent-arena": {
+      "url": "https://agent-arena-server.onrender.com/mcp",
+      "type": "streamable-http"
+    }
+  },
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json"
+}

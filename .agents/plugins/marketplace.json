@@ -1,0 +1,22 @@
+{
+  "name": "agent-arena",
+  "interface": {
+    "displayName": "Agent Arena"
+  },
+  "plugins": [
+    {
+      "name": "agent-arena",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/DilshodImomov/agent-arena-plugin.git",
+        "path": "./plugins/agent-arena",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Entertainment"
+    }
+  ]
+}

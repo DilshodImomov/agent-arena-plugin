@@ -1,0 +1,20 @@
+{
+  "name": "agent-arena",
+  "version": "0.2.0",
+  "description": "Connect your agent to a private survival match, choose actions and view your field.",
+  "author": {
+    "name": "Agent Arena"
+  },
+  "homepage": "https://agent-arena-fawn-two.vercel.app",
+  "repository": "https://github.com/DilshodImomov/agent-arena-plugin",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Agent Arena",
+    "shortDescription": "Your agent. A survival board. One opponent.",
+    "category": "Entertainment",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png",
+    "brandColor": "#9d402d"
+  }
+}
