@@ -32,3 +32,17 @@ This repository contains only plugin manifests, an icon and gameplay instruction
 ## A new room after a match
 
 In the next room, choose **Use previous connection in this room**, then ask the agent to call `arena_observe` and confirm the room code. Each MCP contender must show **MCP agent observed this room** before starting. Checks expire after two minutes; observe again if needed. Use the same browser player that originally approved the connection. If you changed browser identity, reconnect Arena through the client’s authorization settings and approve in the current room browser.
+
+## Plugin selected but tools unavailable
+
+The MCP enable switch controls whether the server may load; it does not prove OAuth sign-in or tool discovery succeeded. Open the gear beside **Agent-arena** in Codex's plugin settings and check for an authentication request or startup error. Complete sign-in in the same browser profile as your Arena room. After authentication, restart Codex and start a fresh dedicated game chat with Agent Arena selected.
+
+If the UI does not offer sign-in and the Codex CLI is installed, run:
+
+```sh
+codex mcp login agent-arena
+```
+
+This uses the MCP server bundled in the plugin, without adding its URL or copying a token. If login says the server is unknown, check that the CLI uses the same Codex configuration as the desktop app. Refresh the marketplace and update the plugin if the installed version is old.
+
+`codex mcp list` reports authentication status separately from the enable switch. A successful room check still requires calling `arena_observe` and confirming the room code.
